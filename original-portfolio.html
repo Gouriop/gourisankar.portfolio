@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourisankar O.P. | Under Maintenance</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            overflow: hidden; /* prevents scrolling */
+        }
+        .maintenance-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+            z-index: 10;
+            position: relative;
+        }
+        .maintenance-container h1 {
+            font-size: 4rem;
+            color: #fff;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px rgba(0, 243, 255, 0.5);
+        }
+        .maintenance-container h1 span {
+            color: var(--primary-color);
+        }
+        .maintenance-container p {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin-bottom: 2.5rem;
+        }
+        .icon-spin {
+            font-size: 5rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            text-shadow: 0 0 15px rgba(0, 243, 255, 0.6);
+            animation: rotate 4s linear infinite;
+        }
+        .social-links {
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    
+    <div class="maintenance-container">
+        <i class="fas fa-cog icon-spin"></i>
+        <h1>Under <span>Maintenance</span></h1>
+        <p>I am currently updating my portfolio with some exciting new projects and features. Please check back soon!</p>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/gourisankar-op" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/gourisankar-op" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</body>
+</html>
