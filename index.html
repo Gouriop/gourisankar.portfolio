@@ -3,93 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gourisankar O.P. | Portfolio</title>
-    <meta name="description" content="Gourisankar OP - Electrical and Electronics Engineering Student at Christ College of Engineering, passionate about embedded systems and inclusive innovation.">
+    <title>Gourisankar O.P. | Under Maintenance</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            overflow: hidden; /* prevents scrolling */
+        }
+        .maintenance-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+            z-index: 10;
+            position: relative;
+        }
+        .maintenance-container h1 {
+            font-size: 4rem;
+            color: #fff;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px rgba(0, 243, 255, 0.5);
+        }
+        .maintenance-container h1 span {
+            color: var(--primary-color);
+        }
+        .maintenance-container p {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin-bottom: 2.5rem;
+        }
+        .icon-spin {
+            font-size: 5rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            text-shadow: 0 0 15px rgba(0, 243, 255, 0.6);
+            animation: rotate 4s linear infinite;
+        }
+        .social-links {
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
-
-    <nav class="navbar">
-        <div class="logo">Gouri<span>sankar</span></div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
+    
+    <div class="maintenance-container">
+        <i class="fas fa-cog icon-spin"></i>
+        <h1>Under <span>Maintenance</span></h1>
+        <p>I am currently updating my portfolio with some exciting new projects and features. Please check back soon!</p>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/gourisankar-op" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/gourisankar-op" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
         </div>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <p class="greeting">Hello World, I am</p>
-            <h1 class="name">Gourisankar O.P.</h1>
-            <p class="tagline">Electrical & Electronics Engineering Student</p>
-            <p class="short-intro">“True STRIDE is when your idea becomes someone else’s independence.”</p>
-            <div class="cta-buttons">
-                <a href="#about" class="btn btn-primary">Know More</a>
-                <a href="#contact" class="btn btn-secondary">Connect</a>
-            </div>
-        </div>
-        <div class="hero-visual">
-            <div class="cyber-circle">
-                <div class="glow-core"></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2 class="section-title">About <span>Me</span></h2>
-        <div class="glass-container about-content">
-            <p>I am a third-year B.Tech student in Electrical and Electronics Engineering at <strong>Christ College of Engineering, Kerala</strong>. I am driven by a curiosity to understand and improve systems, with interests in <strong>embedded systems, electronic design, and control engineering</strong>.</p>
-            <p>I value practical learning and have 1.5+ years of experience in 3D printing and rapid prototyping using FDM, enabling me to turn ideas into functional designs. My work with microcontrollers and real-time systems has strengthened my ability to build intelligent, interactive solutions.</p>
-            <p>I am also actively involved with <strong>STRIDE</strong>, contributing to socially impactful engineering projects. This experience has shaped my perspective on inclusive, user-focused design.</p>
-            <p>I aim to deepen my technical expertise while developing solutions that are <strong>innovative, accessible, and meaningful</strong>.</p>
-            <div style="margin-top: 2rem; display: flex; gap: 1rem; font-family: var(--font-heading); font-size: 1.2rem; color: var(--primary-color);">
-                <span>#Inclusive</span>
-                <span>#Innovation</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2 class="section-title">Get In <span>Touch</span></h2>
-        <div class="glass-container contact-wrapper">
-            <div class="contact-info">
-                <h3>Let's Connect</h3>
-                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/gourisankar-op" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/gourisankar-op" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <form id="contactForm" class="contact-form">
-                <div class="input-group">
-                    <input type="text" id="name" placeholder=" " required>
-                    <label for="name">Your Name</label>
-                </div>
-                <div class="input-group">
-                    <input type="email" id="email" placeholder=" " required>
-                    <label for="email">Your Email</label>
-                </div>
-                <div class="input-group">
-                    <textarea id="message" rows="4" placeholder=" " required></textarea>
-                    <label for="message">Your Message</label>
-                </div>
-                <button type="submit" class="btn btn-primary submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Gourisankar O.P. | Inclusive Innovation.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    </div>
 </body>
 </html>
